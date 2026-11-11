@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cloud Native | Semana 4</title>
+  <style>
+    body { font-family: system-ui, sans-serif; background: #f6f7fb; color: #1e293b; margin: 0; }
+    main { max-width: 720px; background: white; margin: 9vh auto; padding: 34px; border: 1px solid #e2e8f0; border-radius: 16px; box-shadow: 0 8px 35px #0000000c; }
+    h1 { font-size: 1.8rem; margin-top: 0; }
+    p { line-height: 1.6; }
+    a { display: inline-block; border: 1px solid #2563eb; border-radius: 8px; padding: 12px 16px; margin: 8px 8px 8px 0; color: #1d4ed8; text-decoration: none; font-weight: 600; }
+    a:hover { background: #eff6ff; }
+    code { background: #f1f5f9; padding: 2px 5px; border-radius: 4px; }
+    .note { padding: 15px; background: #fff7ed; border-left: 4px solid #f59e0b; border-radius: 4px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Desarrollo Cloud Native — Semana 4</h1>
+  <p>Aplicación de demostración disponible en una <strong>EC2 con Docker</strong>, creada para probar la integración con <strong>AWS API Gateway</strong> y <strong>Azure AD B2C</strong>.</p>
+  <p><a href="/salud">Comprobar /salud</a><a href="/datos">Consultar /datos</a></p>
+  <p>Ambas rutas están accesibles de forma directa en esta instancia, intencionalmente para la clase.</p>
+  <p class="note"><strong>Demostración:</strong> después de comprobar el acceso directo, configura <code>GET /datos</code> en API Gateway con autorización. En la URL del Gateway la petición sin JWT deberá fallar, y con un access token válido podrá responder.</p>
+</main>
+</body>
+</html>

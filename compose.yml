@@ -1,0 +1,7 @@
+services:
+  cloudnative-api:
+    image: ${DOCKERHUB_USERNAME:?Definir DOCKERHUB_USERNAME}/${IMAGE_NAME:?Definir IMAGE_NAME}:${IMAGE_TAG:-latest}
+    container_name: cloudnative-semana4
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
